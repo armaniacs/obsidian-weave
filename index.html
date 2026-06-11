@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting to Yasumaro&hellip;</title>
+  <meta http-equiv="refresh" content="0; url=https://armaniacs.github.io/yasumaro/" />
+  <link rel="canonical" href="https://armaniacs.github.io/yasumaro/" />
+  <script>
+    // パス保持リダイレクト: /obsidian-weave/foo → /yasumaro/foo
+    (function () {
+      var remaining = (window.location.pathname || '/').replace(/^\/obsidian-weave/, '');
+      if (remaining === '' || remaining.charAt(0) !== '/') {
+        remaining = '/' + remaining;
+      }
+      var target = 'https://armaniacs.github.io/yasumaro' + remaining +
+        (window.location.search || '') +
+        (window.location.hash || '');
+      window.location.replace(target);
+    })();
+  </script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background: #0f0f11;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 1.5rem;
+      line-height: 1.7;
+    }
+    a { color: #a78bfa; }
+  </style>
+</head>
+<body>
+  <p>このサイトは <a href="https://armaniacs.github.io/yasumaro/">Yasumaro</a> へ移動しました。自動的にリダイレクトされない場合はリンクをクリックしてください。</p>
+</body>
+</html>
